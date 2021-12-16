@@ -18,9 +18,9 @@ unclassified:
           scm:
             github:
               credentialsId: "github-sa"
-              repoOwner: "REPLACE_GITHUB_ORG"
+              repoOwner: "stubthunder"
               repository: "pipeline-library"
 
 groovy:
-  - url: https://raw.githubusercontent.com/REPLACE_GITHUB_ORG/cloudbees-ci-config-bundle/main/groovy/create-pipeline-template-catalog.groovy
-  - url: https://raw.githubusercontent.com/REPLACE_GITHUB_ORG/cloudbees-ci-config-bundle/main/groovy/create-unhibernate-job.groovy
+  - url: https://raw.githubusercontent.com/stubthunder/cloudbees-ci-config-bundle/main/groovy/create-pipeline-template-catalog.groovy
+  - url: https://raw.githubusercontent.com/stubthunder/cloudbees-ci-config-bundle/main/groovy/create-unhibernate-job.groovy

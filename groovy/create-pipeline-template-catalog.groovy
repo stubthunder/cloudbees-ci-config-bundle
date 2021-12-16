@@ -14,7 +14,7 @@ def name = "microblog-frontend"
 def microBlogJob = jenkins.getItemByFullName(name)
 if (microBlogJob == null) {
   //Pipeline Template Catalog
-  SCMSource scm = new GitSCMSource("https://github.com/REPLACE_GITHUB_ORG/pipeline-template-catalog.git");
+  SCMSource scm = new GitSCMSource("https://github.com/stubthunder/pipeline-template-catalog.git");
   scm.setCredentialsId("github-sa");
   TemplateCatalog catalog = new TemplateCatalog(scm, "master");
   catalog.setUpdateInterval("1h");
@@ -49,7 +49,7 @@ if (microBlogJob == null) {
             </entry>
             <entry>
               <string>repoOwner</string>
-              <string>REPLACE_GITHUB_ORG</string>
+              <string>stubthunder</string>
             </entry>
             <entry>
               <string>repository</string>
@@ -92,7 +92,7 @@ if (microBlogJob == null) {
           </entry>
           <entry>
             <string>repoOwner</string>
-            <string>REPLACE_GITHUB_ORG</string>
+            <string>stubthunder</string>
           </entry>
           <entry>
             <string>repository</string>
@@ -135,7 +135,7 @@ if (microBlogJob == null) {
             </entry>
             <entry>
               <string>repoOwner</string>
-              <string>REPLACE_GITHUB_ORG</string>
+              <string>stubthunder</string>
             </entry>
             <entry>
               <string>repository</string>
@@ -178,7 +178,7 @@ if (microBlogJob == null) {
           </entry>
           <entry>
             <string>repoOwner</string>
-            <string>REPLACE_GITHUB_ORG</string>
+            <string>stubthunder</string>
           </entry>
           <entry>
             <string>repository</string>

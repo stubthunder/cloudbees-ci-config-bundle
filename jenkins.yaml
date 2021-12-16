@@ -1,0 +1,26 @@
+jenkins:
+  systemMessage: 'Jenkins configured using CloudBees CI CasC - v1'
+unclassified:
+  hibernationConfiguration:
+    activities:
+    - "build"
+    - "web"
+    enabled: true
+    gracePeriod: 36000
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
+  globallibraries:
+    libraries:
+    - defaultVersion: "master"
+      name: "cb-days"
+      retriever:
+        modernSCM:
+          scm:
+            github:
+              credentialsId: "github-sa"
+              repoOwner: "REPLACE_GITHUB_ORG"
+              repository: "pipeline-library"
+
+groovy:
+  - url: https://raw.githubusercontent.com/REPLACE_GITHUB_ORG/cloudbees-ci-config-bundle/main/groovy/create-pipeline-template-catalog.groovy
+  - url: https://raw.githubusercontent.com/REPLACE_GITHUB_ORG/cloudbees-ci-config-bundle/main/groovy/create-unhibernate-job.groovy
